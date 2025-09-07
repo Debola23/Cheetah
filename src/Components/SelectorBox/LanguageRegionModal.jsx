@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import i18n from '../../i18n';
 
 const currencies = ['USD','EUR','GBP','JPY','INR','CNY','AUD','CAD'];
 
@@ -13,26 +12,9 @@ const languageRegions = [
   { code: 'hi-IN', label: 'हिन्दी', region: 'India' },
 ];
 
-const translateLanguages = [
-  { code: 'en', label: 'English' },
-  { code: 'es', label: 'Español' },
-  { code: 'fr', label: 'Français' },
-  { code: 'zh', label: '中文' },
-  { code: 'hi', label: 'हिन्दी' },
-  { code: 'ar', label: 'العربية' },
-];
-
-export default function LanguageRegionModal({
-  onClose,
-}) {
+export default function LanguageRegionModal({ onClose }) {
   const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]);
   const [selectedRegion, setSelectedRegion] = useState(languageRegions[0].code);
-  const [selectedTranslatorLanguage, setSelectedTranslatorLanguage] = useState(i18n.language || 'en');
-
-  const handleTranslatorClick = (code) => {
-    setSelectedTranslatorLanguage(code);
-    i18n.changeLanguage(code);
-  };
 
   return (
     <motion.div
@@ -98,31 +80,6 @@ export default function LanguageRegionModal({
                     <div className="text-sm text-gray-500 dark:text-gray-400">
                       {lr.region}
                     </div>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Translator-Language Section */}
-          <div>
-            <p className="font-medium text-gray-700 dark:text-gray-300 mb-2">Select Language</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {translateLanguages.map(lang => {
-                const active = selectedTranslatorLanguage === lang.code;
-                return (
-                  <button
-                    key={lang.code}
-                    onClick={() => handleTranslatorClick(lang.code)}
-                    className={`p-3 rounded-lg text-center border transition ${
-                      active
-                        ? 'bg-[#D6A95A] dark:bg-gray-700 border-[#D6A95A]'
-                        : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600'
-                    } hover:border-[#D6A95A]`}
-                  >
-                    <span className="text-gray-800 dark:text-gray-100">
-                      {lang.label}
-                    </span>
                   </button>
                 );
               })}
