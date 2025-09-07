@@ -1,12 +1,31 @@
-# React + Vite
+A modern property rental web application inspired by platforms like Airbnb. Built with React to deliver a clean,
+responsive, and user-friendly experience for browsing, filtering, and viewing rental properties.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+1.Search & Filters – find rentals by location, price, type, and availability.
+2.Property Listings – view detailed cards with images, pricing, and descriptions.
+3.Interactive Map – drop a pin and get property details (using Leaflet/React-Leaflet).
+4.Responsive Design – optimized for desktop and mobile.
+5.Multi-language & Currency Support (future integration).
 
-Currently, two official plugins are available:
+Tech Stack
+1.Frontend: React, React Router, Framer Motion, Tailwind CSS
+2.Maps: Leaflet / React-Leaflet
+3.State Management: React Hooks / Context API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Roadmap
+1.Add booking & checkout functionality
+2.Integrate live currency conversion
+3.Enable user accounts & preferences
+ 
+Contributing
+Contributions, issues, and feature requests are welcome
+Feel free to fork this repo and submit a pull request.
 
-## Expanding the ESLint configuration
+Author
+Solaja Emmanuel
+Surrey, BC
+Portfolio Website - https://boladev.vercel.app/
+LinkedIn - https://www.linkedin.com/in/emmanuel-solaja-65425431b/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is open-source and available under the MIT License
