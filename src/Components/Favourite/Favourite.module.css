@@ -1,0 +1,28 @@
+.Favourite{
+    height: 100%;
+}
+.How{
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.HowText{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+
+.Favourite {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.How {
+  flex: 1;
+}
+
+.foot {
+  margin-top: auto;
+}

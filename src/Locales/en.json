@@ -1,0 +1,10 @@
+{
+  "preferences": {
+    "title": "Your Preferences",
+    "loginButton": "Log In or Sign Up",
+    "region": "Region (auto-sets language)",
+    "currency": "Select Currency",
+    "language": "Select Language",
+    "close": "Close"
+  }
+}

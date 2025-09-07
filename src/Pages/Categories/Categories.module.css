@@ -1,0 +1,57 @@
+.category{
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.categoryBox1{
+    padding: 2rem;
+    display: flex;
+    gap: 40px;
+}
+.categoryBox2{
+    padding: 2rem;
+    display: flex;
+    gap: 40px;
+}
+.Box{
+    width: calc(33.3333% - 26.6667px);
+}
+.electList {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-top: 1rem;
+    padding-left: 5px;
+}
+.electList a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+.itemImage {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.itemInfo {
+    flex: 1;
+}
+.itemTitle {
+    font-size: 16px;
+    margin: 0;
+    color: black;
+}
+.itemSubtitle {
+    font-size: 13px;
+    color: gray;
+}
+.arrow {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+@media (max-width: 998px) {
+
+}

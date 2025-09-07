@@ -1,0 +1,68 @@
+.bookmarkCheckbox {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 2;
+}
+.bookmarkCheckboxInput {
+    display: none;
+}
+.bookmarkCheckboxLabel {
+    cursor: pointer;
+}
+.bookmarkCheckboxIcon {
+    width: 2em;
+    height: 2em;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s, fill 0.3s;
+}
+.bookmarkCheckboxIconBack {
+    stroke: #333;
+    transition: transform 0.3s;
+}
+.bookmarkCheckboxIconCheck {
+    stroke: #fff;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 16;
+    transition: stroke-dashoffset 0.3s, transform 0.3s;
+    transform: translateX(2px);
+}
+.bookmarkCheckboxInput:checked
++ .bookmarkCheckboxLabel
+.bookmarkCheckboxIcon {
+    fill: #D6A95A;
+}
+
+.bookmarkCheckboxInput:checked
++ .bookmarkCheckboxLabel
+.bookmarkCheckboxIconBack {
+    stroke: #D6A95A;
+    transform: scale(1.1);
+    animation: bookmark-pop 0.4s ease;
+}
+.bookmarkCheckboxInput:checked
++ .bookmarkCheckboxLabel
+.bookmarkCheckboxIconCheck {
+    stroke-dashoffset: 0;
+    transition-delay: 0.2s;
+}
+
+@keyframes bookmark-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

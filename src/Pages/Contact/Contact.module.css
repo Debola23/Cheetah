@@ -1,0 +1,46 @@
+.contact{
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.contactH{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.highlight{
+    color: #D6A95A;
+}
+.heading{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+.mail, .chat{
+    display: flex;
+    padding-left: 2rem;
+}
+.chat{
+    padding-bottom: 2rem;
+}
+.imgSize{
+    height: 36px;
+    width: 38px;
+}
+
+
+
+@media (max-width: 598px) {
+    .contactH{
+        font-size: 1.4rem;
+    }
+    .heading{
+        font-size: 1.286rem;
+    }
+    #info{
+        font-size: 0.889rem;
+    }
+}
