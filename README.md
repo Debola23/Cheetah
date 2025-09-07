@@ -13,11 +13,14 @@ Tech Stack
 2.Maps: Leaflet / React-Leaflet
 3.State Management: React Hooks / Context API
 
-Roadmap
-1.Add booking & checkout functionality
-2.Integrate live currency conversion
-3.Enable user accounts & preferences
- 
+Planned Features / Roadmap
+1.Mobile Dock Bar – quick-access navigation for mobile users.
+2.User Authentication – sign up, log in, and manage bookings securely.
+3.Favorites & Wishlists – allow users to save preferred properties.
+4.Booking & Availability System – enable date selection and instant booking.
+5.Reviews & Ratings – let users leave feedback on rentals.
+6.Dark Mode Support – improve accessibility and personalization.
+
 Contributing
 Contributions, issues, and feature requests are welcome
 Feel free to fork this repo and submit a pull request.
